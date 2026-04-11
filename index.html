@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Booking Companion — Online booking for independent salons</title>
+    <meta
+      name="description"
+      content="Share one link. Clients request a time. You approve with a tap. Online booking built for independent salons."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Social preview -->
+    <meta property="og:title" content="Booking Companion" />
+    <meta
+      property="og:description"
+      content="Online booking for salons who actually like their clients."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bookingcompanion.app" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN (no build step) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                DEFAULT: '#c9a961',
+                soft: '#d8bf84',
+                dim: '#8c7541',
+              },
+              ink: {
+                DEFAULT: '#0a0a0a',
+                card: '#141414',
+                border: '#1f1f1f',
+              },
+            },
+            fontFamily: {
+              display: ['Fraunces', 'serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', system-ui, sans-serif;
+        background: #0a0a0a;
+        color: #e5e5e5;
+      }
+      .font-display {
+        font-family: 'Fraunces', serif;
+        letter-spacing: -0.01em;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen antialiased">
+    <main class="mx-auto w-full max-w-xl px-6 py-24 sm:py-32">
+      <!-- ─────────── Hero ─────────── -->
+      <section class="space-y-8 text-center">
+        <p class="text-xs uppercase tracking-[0.2em] text-gold-dim">
+          Booking Companion
+        </p>
+        <h1
+          class="font-display text-4xl font-medium leading-[1.1] text-white sm:text-5xl"
+        >
+          Online booking for salons who actually like their clients.
+        </h1>
+        <p class="text-lg leading-relaxed text-neutral-400">
+          Share one link. Clients request a time.<br />
+          You approve with a tap. That's it.
+        </p>
+        <div class="pt-4">
+          <a
+            href="mailto:hello@bookingcompanion.app"
+            class="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-6 py-3 text-sm font-medium text-gold-soft transition hover:border-gold hover:bg-gold/20"
+          >
+            Get in touch
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ─────────── Divider ─────────── -->
+      <div class="my-24 flex items-center gap-4 text-xs uppercase tracking-[0.2em] text-neutral-600">
+        <div class="h-px flex-1 bg-ink-border"></div>
+        How it works
+        <div class="h-px flex-1 bg-ink-border"></div>
+      </div>
+
+      <!-- ─────────── How it works ─────────── -->
+      <section class="space-y-12">
+        <div class="space-y-2">
+          <h2 class="font-display text-2xl text-white">Share your link</h2>
+          <p class="leading-relaxed text-neutral-400">
+            Put your booking page in your Instagram bio, in text replies, on
+            your business card. One link, forever.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h2 class="font-display text-2xl text-white">They request</h2>
+          <p class="leading-relaxed text-neutral-400">
+            Clients pick a service and a time that works for them. No account,
+            no app download, no login.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h2 class="font-display text-2xl text-white">You approve</h2>
+          <p class="leading-relaxed text-neutral-400">
+            You get a text the moment a request comes in. Tap to confirm, tap
+            to reschedule. Nothing auto-books without you.
+          </p>
+        </div>
+      </section>
+
+      <!-- ─────────── Divider ─────────── -->
+      <div class="my-24 flex items-center gap-4 text-xs uppercase tracking-[0.2em] text-neutral-600">
+        <div class="h-px flex-1 bg-ink-border"></div>
+        Ready?
+        <div class="h-px flex-1 bg-ink-border"></div>
+      </div>
+
+      <!-- ─────────── Closing CTA ─────────── -->
+      <section class="space-y-6 text-center">
+        <p class="text-lg leading-relaxed text-neutral-300">
+          We're onboarding a small group of salons right now. If that sounds
+          like you, say hi.
+        </p>
+        <a
+          href="mailto:hello@bookingcompanion.app"
+          class="inline-block font-display text-2xl text-gold-soft underline decoration-gold/40 decoration-2 underline-offset-8 transition hover:decoration-gold"
+        >
+          hello@bookingcompanion.app
+        </a>
+      </section>
+
+      <!-- ─────────── Footer ─────────── -->
+      <footer class="mt-32 space-y-2 text-center text-xs text-neutral-600">
+        <p>© 2026 Booking Companion</p>
+        <p>Made in Tacoma for independent salons.</p>
+      </footer>
+    </main>
+  </body>
+</html>
