@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Booking Companion — Online booking for independent salons</title>
+    <title>Booking Companion — Online booking for independent businesses</title>
     <meta
       name="description"
-      content="Share one link. Clients request a time. You approve with a tap. Online booking built for independent salons."
+      content="Share one link. Clients pick a time. You approve with a tap. Online booking with SMS confirmations, calendar sync, and customizable themes."
     />
     <meta name="theme-color" content="#0a0a0a" />
 
@@ -14,7 +14,7 @@
     <meta property="og:title" content="Booking Companion" />
     <meta
       property="og:description"
-      content="Online booking for salons who actually like their clients."
+      content="Online booking for businesses who actually like their clients."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://bookingcompanion.app" />
@@ -67,7 +67,7 @@
   </head>
   <body class="min-h-screen antialiased">
     <main class="mx-auto w-full max-w-xl px-6 py-24 sm:py-32">
-      <!-- ─────────── Hero ─────────── -->
+      <!-- Hero -->
       <section class="space-y-8 text-center">
         <p class="text-xs uppercase tracking-[0.2em] text-gold-dim">
           Booking Companion
@@ -75,62 +75,163 @@
         <h1
           class="font-display text-4xl font-medium leading-[1.1] text-white sm:text-5xl"
         >
-          Online booking for salons who actually like their clients.
+          Online booking for businesses who actually like their clients.
         </h1>
         <p class="text-lg leading-relaxed text-neutral-400">
-          Share one link. Clients request a time.<br />
-          You approve with a tap. That's it.
+          Share one link. Clients pick a time.<br />
+          You approve with a tap. They get a text. Done.
         </p>
         <div class="pt-4">
           <a href="#signup"
              class="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-6 py-3 text-sm font-medium text-gold-soft transition hover:border-gold hover:bg-gold/20">
-            Get started free <span aria-hidden="true">→</span>
+            Start your free trial <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </section>
 
-      <!-- ─────────── Divider ─────────── -->
+      <!-- Divider: How it works -->
       <div class="my-24 flex items-center gap-4 text-xs uppercase tracking-[0.2em] text-neutral-600">
         <div class="h-px flex-1 bg-ink-border"></div>
         How it works
         <div class="h-px flex-1 bg-ink-border"></div>
       </div>
 
-      <!-- ─────────── How it works ─────────── -->
+      <!-- How it works -->
       <section class="space-y-12">
         <div class="space-y-2">
           <h2 class="font-display text-2xl text-white">Share your link</h2>
           <p class="leading-relaxed text-neutral-400">
-            Put your booking page in your Instagram bio, in text replies, on
-            your business card. One link, forever.
+            Your booking page lives at <span class="text-gold-soft">yourname.bookingcompanion.app</span>.
+            Put it in your Instagram bio, text replies, business card. One link, always works.
           </p>
         </div>
 
         <div class="space-y-2">
-          <h2 class="font-display text-2xl text-white">They request</h2>
+          <h2 class="font-display text-2xl text-white">They pick a time</h2>
           <p class="leading-relaxed text-neutral-400">
-            Clients pick a service and a time that works for them. No account,
-            no app download, no login.
+            Clients see your services, prices, and available slots based on your
+            real schedule. No account needed, no app to download.
           </p>
         </div>
 
         <div class="space-y-2">
           <h2 class="font-display text-2xl text-white">You approve</h2>
           <p class="leading-relaxed text-neutral-400">
-            You get a text the moment a request comes in. Tap to confirm, tap
-            to reschedule. Nothing auto-books without you.
+            Get a text the moment a request comes in. Tap to confirm or
+            reschedule. Nothing auto-books without you.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h2 class="font-display text-2xl text-white">They get notified</h2>
+          <p class="leading-relaxed text-neutral-400">
+            Your client gets an SMS and email confirmation with appointment details
+            and a link to reschedule or cancel if plans change.
           </p>
         </div>
       </section>
 
-      <!-- ─────────── Divider ─────────── -->
+      <!-- Divider: Features -->
+      <div class="my-24 flex items-center gap-4 text-xs uppercase tracking-[0.2em] text-neutral-600">
+        <div class="h-px flex-1 bg-ink-border"></div>
+        Everything you need
+        <div class="h-px flex-1 bg-ink-border"></div>
+      </div>
+
+      <!-- Features -->
+      <section class="space-y-10">
+        <div class="grid gap-8 sm:grid-cols-2">
+          <div class="space-y-2">
+            <p class="text-sm font-medium text-gold-soft">SMS Notifications</p>
+            <p class="text-sm leading-relaxed text-neutral-400">
+              Booking alerts to you, confirmation texts to clients, and automated
+              reminders before appointments.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="text-sm font-medium text-gold-soft">Google Calendar Sync</p>
+            <p class="text-sm leading-relaxed text-neutral-400">
+              Confirmed appointments sync to your Google Calendar automatically.
+              Your schedule stays in one place.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="text-sm font-medium text-gold-soft">Custom Themes</p>
+            <p class="text-sm leading-relaxed text-neutral-400">
+              Pick an accent color and choose dark or light mode. Your booking
+              page matches your brand, not ours.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="text-sm font-medium text-gold-soft">Client Management</p>
+            <p class="text-sm leading-relaxed text-neutral-400">
+              Clients are saved automatically from bookings. View history, contact info,
+              and notes in one place.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="text-sm font-medium text-gold-soft">Business Hours</p>
+            <p class="text-sm leading-relaxed text-neutral-400">
+              Set your hours for each day of the week with multiple time ranges.
+              Clients only see times you're actually available.
+            </p>
+          </div>
+
+          <div class="space-y-2">
+            <p class="text-sm font-medium text-gold-soft">Personal Events</p>
+            <p class="text-sm leading-relaxed text-neutral-400">
+              Block off lunch, errands, or days off. Personal events hide those
+              times from your booking page automatically.
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded-lg border border-ink-border bg-ink-card p-5 space-y-2">
+          <p class="text-sm font-medium text-white">Built for you, not against you</p>
+          <p class="text-sm leading-relaxed text-neutral-400">
+            No forced auto-booking. No client accounts or app downloads required.
+            No percentage taken from your services. You set your prices,
+            you control your schedule, you approve every appointment.
+          </p>
+        </div>
+      </section>
+
+      <!-- Divider: Pricing -->
+      <div class="my-24 flex items-center gap-4 text-xs uppercase tracking-[0.2em] text-neutral-600">
+        <div class="h-px flex-1 bg-ink-border"></div>
+        Simple pricing
+        <div class="h-px flex-1 bg-ink-border"></div>
+      </div>
+
+      <!-- Pricing -->
+      <section class="text-center space-y-6">
+        <div class="rounded-lg border border-ink-border bg-ink-card p-8 space-y-4">
+          <p class="font-display text-4xl text-white">$5<span class="text-lg text-neutral-500">/month</span></p>
+          <p class="text-neutral-400">Everything included. No tiers, no upsells.</p>
+          <ul class="text-sm text-neutral-400 space-y-2 text-left max-w-xs mx-auto">
+            <li class="flex items-start gap-2"><span class="text-gold-soft mt-0.5">&#10003;</span> 7-day free trial</li>
+            <li class="flex items-start gap-2"><span class="text-gold-soft mt-0.5">&#10003;</span> Your own booking page</li>
+            <li class="flex items-start gap-2"><span class="text-gold-soft mt-0.5">&#10003;</span> SMS & email notifications</li>
+            <li class="flex items-start gap-2"><span class="text-gold-soft mt-0.5">&#10003;</span> Google Calendar sync</li>
+            <li class="flex items-start gap-2"><span class="text-gold-soft mt-0.5">&#10003;</span> Custom themes & branding</li>
+            <li class="flex items-start gap-2"><span class="text-gold-soft mt-0.5">&#10003;</span> Client management</li>
+            <li class="flex items-start gap-2"><span class="text-gold-soft mt-0.5">&#10003;</span> Automated text reminders</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Divider: Get started -->
       <div class="my-24 flex items-center gap-4 text-xs uppercase tracking-[0.2em] text-neutral-600">
         <div class="h-px flex-1 bg-ink-border"></div>
         Get started
         <div class="h-px flex-1 bg-ink-border"></div>
       </div>
 
-      <!-- ─────────── Signup Form ─────────── -->
+      <!-- Signup Form -->
       <section id="signup" class="space-y-6">
         <div id="signup-form" class="space-y-5">
           <div>
@@ -165,22 +266,23 @@
           <p id="signup-error" class="text-sm text-red-400 hidden"></p>
           <button id="signup-btn" type="button"
             class="w-full rounded-lg bg-gold py-3 text-sm font-semibold text-black transition hover:bg-gold-soft disabled:opacity-50 disabled:cursor-not-allowed">
-            Create my booking page
+            Start free trial
           </button>
+          <p class="text-xs text-neutral-600 text-center">7 days free. No credit card required.</p>
         </div>
 
         <!-- Success state (hidden by default) -->
         <div id="signup-success" class="hidden text-center space-y-4 py-8">
-          <p class="text-2xl font-display text-white">Check your email</p>
+          <p class="text-2xl font-display text-white">You're in!</p>
           <p class="text-neutral-400">We sent a verification link to <span id="success-email" class="text-gold-soft"></span>.</p>
           <p class="text-neutral-500 text-sm">Click the link to finish setting up your booking page.</p>
         </div>
       </section>
 
-      <!-- ─────────── Footer ─────────── -->
+      <!-- Footer -->
       <footer class="mt-32 space-y-2 text-center text-xs text-neutral-600">
-        <p>© 2026 Booking Companion</p>
-        <p>Made in Tacoma for independent salons.</p>
+        <p>&copy; 2026 Booking Companion</p>
+        <p>Made in Tacoma for independent businesses.</p>
       </footer>
     </main>
     <script>
@@ -254,7 +356,7 @@
       showError('Network error. Please try again.');
     } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = 'Create my booking page';
+      submitBtn.textContent = 'Start free trial';
     }
   });
 
