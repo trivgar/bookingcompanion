@@ -2,6 +2,7 @@
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Booking Companion — Online booking for independent businesses</title>
     <meta
@@ -197,6 +198,11 @@
             No percentage taken from your services. You set your prices,
             you control your schedule, you approve every appointment.
           </p>
+          <p class="text-sm leading-relaxed text-neutral-400">
+            The client-facing booking page is entirely optional &mdash; turn it on
+            when you're ready. Booking Companion works great as a standalone
+            calendar, client manager, and appointment tracker even without it.
+          </p>
         </div>
       </section>
 
@@ -250,11 +256,17 @@
               class="w-full rounded-lg border border-ink-border bg-ink-card px-4 py-3 text-white placeholder-neutral-600 outline-none focus:border-gold/60 transition" placeholder="Jane's Salon" />
           </div>
           <div>
+            <label class="block text-xs uppercase tracking-wider text-neutral-500 mb-1.5">Phone number</label>
+            <input id="signup-phone" type="tel" required
+              class="w-full rounded-lg border border-ink-border bg-ink-card px-4 py-3 text-white placeholder-neutral-600 outline-none focus:border-gold/60 transition" placeholder="+1 (555) 123-4567" />
+            <p class="mt-1 text-xs text-neutral-600">For booking notifications. We'll text you when clients request appointments.</p>
+          </div>
+          <div>
             <label class="block text-xs uppercase tracking-wider text-neutral-500 mb-1.5">Pick your URL</label>
-            <div class="flex items-center gap-0">
+            <div class="flex items-center gap-0 min-w-0">
               <input id="signup-slug" type="text" required
-                class="flex-1 rounded-l-lg border border-r-0 border-ink-border bg-ink-card px-4 py-3 text-white placeholder-neutral-600 outline-none focus:border-gold/60 transition" placeholder="janes-salon" />
-              <span class="rounded-r-lg border border-ink-border bg-ink-card/50 px-3 py-3 text-sm text-neutral-500">.bookingcompanion.app</span>
+                class="min-w-0 flex-1 rounded-l-lg border border-r-0 border-ink-border bg-ink-card px-4 py-3 text-white placeholder-neutral-600 outline-none focus:border-gold/60 transition" placeholder="janes-salon" />
+              <span class="flex-shrink-0 rounded-r-lg border border-ink-border bg-ink-card/50 px-2 py-3 text-xs sm:text-sm text-neutral-500 whitespace-nowrap">.bookingcompanion.app</span>
             </div>
             <p id="slug-status" class="mt-1.5 text-xs h-4"></p>
           </div>
@@ -323,10 +335,11 @@
     const name = document.getElementById('signup-name').value.trim();
     const email = document.getElementById('signup-email').value.trim();
     const business = document.getElementById('signup-business').value.trim();
+    const phone = document.getElementById('signup-phone').value.trim();
     const slug = slugInput.value.trim();
     const password = document.getElementById('signup-password').value;
 
-    if (!name || !email || !business || !slug || !password) {
+    if (!name || !email || !business || !phone || !slug || !password) {
       showError('Please fill in all fields.'); return;
     }
     if (password.length < 8) {
@@ -341,7 +354,7 @@
       const res = await fetch(`${API}/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, business_name: business, slug, password }),
+        body: JSON.stringify({ name, email, business_name: business, slug, password, phone }),
       });
 
       if (res.ok) {
